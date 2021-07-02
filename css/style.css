@@ -1,0 +1,48 @@
+
+/* define o tamanho da fonte do rodapé */
+ h6{
+  font-size: 12px;
+ }
+
+ 
+.main-container {
+  padding: 0px 20px 2px 300px;
+  height: 100%;
+}
+
+.left-side-bar{
+  left: 0 !important;
+}
+
+/* Adiciona borda ao canvas */
+.canvas {
+  border: 3px solid #aaa;
+}
+
+/* define as configurações da div dos canvas */
+.canvas-container{
+  margin: 0 auto;
+  flex: 1;
+}
+
+
+/* define as especificações da div do título */
+.titulo-container{
+  color: #48a1eb;
+  text-align:center;
+  margin-top: 10px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* define as configurações da div do botão */
+.button-container{
+  color: #48a1eb;
+  text-align: center;
+  margin-bottom: 5px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* define a largura do botão */
+.button-custom{
+  width: 80px;
+}

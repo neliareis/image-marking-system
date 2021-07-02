@@ -1,4 +1,4 @@
-# Sistema de Marcação de Imagem
+# Sistema de Marcação em Imagens 2D
 Trabalho desenvolvido para a disciplina de Projeto Final de Programação da PUC-Rio.
 
 ## Documentação e Especificações do Sistema

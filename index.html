@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Basic Page Info -->
+	<meta charset="utf-8">
+	<title>Sistema de Marcação</title>
+
+	<!-- Site favicon -->
+	<link rel="icon" type="image/png" sizes="180x180" href="vendors/images/favIconNReis.png">
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="vendors/styles/core.css">
+	<link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="vendors/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<!-- start body -->
+<body>
+	<!-- start left-side-bar -->
+	<div class="left-side-bar">
+		<div class="brand-logo">
+			<a href="index.html">
+                Configurações
+			</a>
+		</div>
+        
+		<!-- start menu-block customscroll -->
+		<div class="menu-block customscroll">
+			<!-- start sidebar-menu -->
+			<div class="sidebar-menu">
+				<!-- start accordion-menu -->
+				<ul id="accordion-menu">
+					<li>
+						 <div class="sidebar-small-cap"></div> <!--Este é subtítulo -->
+					</li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle">
+							<span class="micon fa fa-upload"></span><span class="mtext">Abrir</span>
+						</a>
+						<ul class="submenu">
+							<li><a id="btnCarregarImagem" href="#">Carregar imagem</a></li>
+							<li><a id="btnCarregarJson" href="#">Carregar json</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle">
+							<span class="micon fa fa-save"></span><span class="mtext">Salvar</span>
+						</a>
+						<ul class="submenu">
+							<li><a id="btnSalvarPNG" href="#">Salvar como PNG</a></li>
+							<li><a id="btnSalvarJSON" href="#">Salvar como JSON</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle">
+							<span class="micon fa fa-pencil"></span><span class="mtext">Marcar</span>
+						</a>
+						<ul class="submenu">
+							<li><a id="btnMarcacaoLivre" href="#">Livre</a></li>
+							<li><a id="btnMarcacaoDireta" href="#">Direta</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a id="btnEditar" href="#" class="dropdown-toggle no-arrow">
+							<span class="micon fa fa-edit"></span><span class="mtext">Editar</span>
+						</a>
+					</li>
+					<li>
+						<a id="btnLimpar" href="#" class="dropdown-toggle no-arrow">
+							<span class="micon fa fa-eraser"></span><span class="mtext">Limpar</span>
+						</a>
+					</li>
+
+					<li>
+						<div class="dropdown-divider"></div>
+					</li>
+					<li>
+						<div class="sidebar-small-cap">Adicionais</div>
+					</li>
+					<li>
+						<a href="#" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-invoice"></span><span class="mtext">Observações</span>
+						</a>
+					</li>
+				</ul>
+				<!-- end accordion-menu -->
+			</div>
+			<!-- end sidebar-menu -->
+		</div>
+		<!-- end menu-block customscroll -->
+	</div>
+	<!-- end left-side-bar -->
+
+	<!-- start main-container -->
+	<div class="main-container">
+		<div class="pd-ltr-20 xs-pd-20-10" style="display: flex; flex-direction: column; height: 100%;">
+			<div class="min-height-200px" style="flex: 1; display: flex; flex-direction: column;">
+				<div class="page-header " style="background: #142127;">
+					<div class="row ">
+						<div class="col-md-12 col-sm-12" style="text-align: center;">
+							<div class="title" >
+								<h3 style=" color: white">Sistema de Marcação de Imagens</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pd-20 bg-white border-radius-4 box-shadow mb-30" style="flex:1; display: flex;">
+                    <div class="canvas-container">
+                        <canvas class="canvas" id="c"></canvas>
+                    </div>
+				</div>
+			</div>
+			<div class="footer-wrap pd-20 mb-20 card-box">
+				<h6>SMI - Sistema de Marcação de Imagens 2D</h6>
+			</div>
+            <div id="fileInputContainer" style="display: none;"></div>
+		</div>
+	</div>
+	<!-- end main-container -->
+	<a id="downloadAnchorElem" style="display:none"></a>
+
+	<!-- js -->
+	<script src="vendors/scripts/core.js"></script>
+	<script src="vendors/scripts/script.min.js"></script>
+	<script src="vendors/scripts/process.js"></script>
+	<script src="vendors/scripts/layout-settings.js"></script>
+    <script src="scripts/fabric.min.js"></script>
+    <script src="scripts/canvas.js"></script>
+	<script src="scripts/main.js"></script>
+</body>
+<!-- end body -->
+
+</html>
